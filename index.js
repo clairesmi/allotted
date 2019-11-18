@@ -5,8 +5,9 @@ const bodyParser = require('body-parser')
 const router = require('./config/router')// ge router module
 const logger = require('./lib/logger')
 const errorHandler = require('./lib/errorHandler')
-const { dbURI, port } = require('./config/environment')
+const { dbURI } = require('./config/environment')
 
+app.use(express.static(`${__dirname}/dist`))
 
 mongoose.connect(
   dbURI, 
@@ -24,9 +25,9 @@ app.use(errorHandler)
 
 app.get('/*', (req, res) => res.status(404).json({ message: 'Not Found checking' })) // catch all
 
-app.listen(port, () => console.log(`server listening on port ${port}`))
+app.listen(process.env.PORT, () => console.log(`Running on port ${process.env.PORT}`))
 
-
+app.get('/*', (req, res) => res.sendFile(`${__dirname}/dist/index.html`))
 
 
 module.exports = app
