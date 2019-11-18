@@ -7,6 +7,8 @@ const logger = require('./lib/logger')
 const errorHandler = require('./lib/errorHandler')
 const { dbURI } = require('./config/environment')
 
+require('dotenv').config()
+
 app.use(express.static(`${__dirname}/dist`))
 
 mongoose.connect(
