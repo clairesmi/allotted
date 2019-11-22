@@ -3,7 +3,7 @@ import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 import CreatableSelect from 'react-select/creatable'
 
-import ImageUpload from '../images/imageUpload'
+import ImageUpload from '../images/ImageUpload'
 
 const animatedComponents = makeAnimated()
 
