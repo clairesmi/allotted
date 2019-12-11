@@ -27,20 +27,17 @@ class VegetablesMap extends React.Component {
   
   componentDidMount() {
     this.getData()
+    // this.getPostcodes()
     
-  }
-
-  componentDidUpdate() {
-    this.getPostcodes()
   }
 
   getData() {
     axios.get('/api/vegetables')
       .then(res => {
         this.setState({ vegetables: res.data })
+        this.getPostcodes()
       })
       .catch(err => this.setState({ errors: err.response.data.errors }))
-
   }
    
   getPostcodes() {
@@ -70,8 +67,6 @@ class VegetablesMap extends React.Component {
   }
 
   render() {
-    
-    // console.log(this.state.postcodes)
     if (!this.state.vegetables) return null
     if (!this.state.postcodes) return null
     const { showPopup } = this.state

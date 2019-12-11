@@ -13,7 +13,6 @@ class VegetablesRecipe extends React.Component {
 
     }
     this.handleClick = this.handleClick.bind(this)
-    this.handleClose = this.handleClose.bind(this)
   }
 
   componentDidMount() {
@@ -27,12 +26,9 @@ class VegetablesRecipe extends React.Component {
   }
 
   handleClick() {
-    this.setState({ recipeShow: true })
+    this.setState({ recipeShow: !this.state.recipeShow })
   }
 
-  handleClose() {
-    this.setState({ recipeShow: false })
-  }
 
   render() {
     console.log(this.state.recipes)
@@ -75,7 +71,7 @@ class VegetablesRecipe extends React.Component {
                   </a> 
                 </label> 
               ))}
-              <button onClick = {this.handleClose}>Show less</button>
+              <button onClick = {this.handleClick}>Show less</button>
             </div>
             }
           </div>
