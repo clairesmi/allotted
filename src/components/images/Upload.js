@@ -6,7 +6,7 @@
 import React, { Component } from 'react'
 import { storage } from '../../../firebase-config'
 
-class ImageUpload extends Component {
+class Upload extends Component {
   constructor(props) {
     super(props)
 
@@ -54,4 +54,4 @@ class ImageUpload extends Component {
   }
 }
 
-export default ImageUpload
+export default Upload

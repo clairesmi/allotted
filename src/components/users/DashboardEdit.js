@@ -6,7 +6,7 @@ import makeAnimated from 'react-select/animated'
 import CreatableSelect from 'react-select/creatable'
 
 import Auth from '../../lib/auth'
-import ImageUpload from '../images/ImageUpload'
+import Upload from '../images/Upload'
 
 const animatedComponents = makeAnimated()
 
@@ -171,7 +171,7 @@ class DashboardEdit extends React.Component {
               value={data.username}
             />
             <br/>
-            <ImageUpload />
+            <Upload />
             <input hidden id='imgurl' name="userImage" value={data.userImage} onChange={this.handleChange}/>
             <br/>
             <label>Address line 1</label>

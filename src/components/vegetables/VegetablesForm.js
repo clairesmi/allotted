@@ -3,7 +3,7 @@ import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 import CreatableSelect from 'react-select/creatable'
 
-import ImageUpload from '../images/ImageUpload'
+import Upload from '../images/Upload'
 
 const animatedComponents = makeAnimated()
 
@@ -44,7 +44,7 @@ const VegetablesForm = ( { vegetable: { title, varietyOfVeg, pickedDate, descrip
             onChange={(e) => handleChange(e)}
             value={pickedDate}
           />
-          <ImageUpload />
+          <Upload />
           <input hidden id='imgurl' name='image' value={image} onChange={(e) => handleChange(e)}/>
           <label>Location<span>*</span></label>
           <input
