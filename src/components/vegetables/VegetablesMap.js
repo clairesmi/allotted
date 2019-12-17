@@ -27,7 +27,6 @@ class VegetablesMap extends React.Component {
   
   componentDidMount() {
     this.getData()
-    // this.getPostcodes()
     
   }
 
