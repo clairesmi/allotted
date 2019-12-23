@@ -21,7 +21,7 @@ Allotted is a web platform that allows people who grow their own produce to shar
 
     - Establish a user journey and wireframes that clearly show which elements are MVP (CRUD fucntionality) and which elements are bonus features
 
-    -Fully test at least one model 
+    - Fully test at least one model 
 
     - Deploy the project online 
 
