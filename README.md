@@ -68,9 +68,9 @@ Use the clone button to download the source code. Enter the following commands i
 
 ### External APIs
 
-    MapBox Api
+    MapBox API
     postcodes.io API
-    Recipe Puppy
+    Recipe Puppy API
 
 ## User Experience 
 
@@ -78,7 +78,7 @@ The app is a sharing platform where users can either register as a grower or as 
 
 ![Register Page](/src/assets/register-form.png)
 
-Produce that is being offered can be viewed on the Vegetable Index Page (Veg on Offer) which can be switched to Map View. The Map View was one of the elements that I focused on. I used an Axios post request to send the postcode of the location of each item to the postcodes.io API which returned the co-ordinates. I then posted the co-ordinates on to the map and used the map method to post each item on to it's postcode.  
+Produce that is being offered can be viewed on the Vegetable Index Page (Veg on Offer) which can be switched to Map View. The Map View was one of the elements that I focused on. I used an Axios post request to send the postcode of the location of each item to the postcodes.io API which returned the co-ordinates. I then posted the co-ordinates on to the map and used the map method to post each item on to its postcode. Each item can then be clicked to take the user to its show page.
 
 
 ```
@@ -122,7 +122,7 @@ Produce that is being offered can be viewed on the Vegetable Index Page (Veg on 
 ![Map Page screenshot](/src/assets/map-page.png)
 
 
-The user can select an item and then book an appointment to collect it with it's grower. There is a chat function for the users to communicate through which I created the back end routes for.
+The user can select an item and then book an appointment to collect it with its grower. There is a chat function for the users to communicate through which I created the back end routes for.
 
 On the show page for the available produce, I also worked with the Recipe Puppy API to suggest recipes for the user based on posting the name of the item to the API. I then created show and hide functionality based on showing only 3 recipes or 10. 
 
@@ -191,4 +191,4 @@ The tests start off with the broadest scope of checking if a user is logged in (
 
 Overall we worked very well as a team - we implemented daily standups and a Trello board to organise our workloads. 
 
-We would have liked to have added WebSockets to the chat function for live updates. We also should have taken more time to think about and plan the styling of the app with some more wireframing and sketching of ideas. 
+We would have liked to have added WebSockets to the chat function for live updates. We also would have like to have taken more time to think about and plan the styling of the app with some more wireframing and sketching of ideas. 
