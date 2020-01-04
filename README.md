@@ -34,7 +34,7 @@ Allotted is a web platform that allows people who grow their own produce to shar
 
 The project is deployed online with Heroku and can be found here:
 
-https://allotaveg.herokuapp.com/
+http://co-ordinate.herokuapp.com/
 
 ## Getting started
 
