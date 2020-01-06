@@ -31,6 +31,7 @@ class VegetablesIndex extends React.Component {
     axios.get('/api/vegetables')
       .then(res => this.setState({ vegetables: res.data, searchTerm: searchFromRedirect }))
       .catch(err => console.log(err))
+    console.log(this.state.vegetables)
   }
 
   onChange({ target: { name, value, dataset, innerHTML } }) {

@@ -44,6 +44,7 @@ class VegetablesMap extends React.Component {
     const postcodes = vegetables.map(veg => veg.vegLocation.replace(' ', ''))
     axios.post('https://cors-anywhere.herokuapp.com/api.postcodes.io/postcodes/', { postcodes } )
       .then(res => this.setState({ postcodes: res.data.result, vegetables: vegetables }))
+    console.log(this.state.postcodes)
       .catch(err => this.setState({ errors: err.response.data.errors }))
   }
 
